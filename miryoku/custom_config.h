@@ -84,7 +84,7 @@ MIRYOKU_X(GAMENUM,"GNum")
         // Combo für ü (U + J) -> Vertikal rechts halbaußen
         combo_ue {
             timeout-ms = <50>;
-            key-positions = <16 21>;
+            key-positions = <7 17>;
             bindings = <&kp RA(U)>;
             layers = <U_BASE>;
         };
@@ -92,7 +92,7 @@ MIRYOKU_X(GAMENUM,"GNum")
         // Combo für ö (O + L) -> Vertikal rechts außen
         combo_oe {
             timeout-ms = <50>;
-            key-positions = <18 23>;
+            key-positions = <9 19>;
             bindings = <&kp RA(O)>;
             layers = <U_BASE>;
         };
