@@ -4,6 +4,13 @@
 #include <dt-bindings/zmk/keys.h>
 #define XXX &none
 
+// Config
+#define CONFIG_BT_CTLR_TX_PWR_PLUS_8=y
+#define CONFIG_ZMK_KSCAN_DEBOUNCE_PRESS_MS=1
+#define CONFIG_ZMK_KSCAN_DEBOUNCE_RELEASE_MS=10
+#define CONFIG_ZMK_STUDIO=y
+#define CONFIG_ZMK_STUDIO_LOCKING=n
+
 // FPS friendly tap layer
 #define MIRYOKU_LAYER_GAME \
 &kp TAB,           &kp Q,             &kp W,             &kp E,             &kp R,             &kp Z,             &kp U,             &kp I,             &kp O,             &kp P,             \
