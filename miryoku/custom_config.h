@@ -54,7 +54,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <30 35>;
             bindings = <&tog U_GAME>;
-            layers = <U_L(BASE) U_L(GAME)>; // Wrapped with U_L()
+            layers = <0 10>;
         };
 
         // Combo für ä (Q + A) -> Vertikal links außen
@@ -62,7 +62,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <0 10>; 
             bindings = <&kp RA(A)>;
-            layers = <U_L(BASE)>; // Wrapped with U_L()
+            layers = <0>;
         };
 
         // Combo für ß (W + S) -> Vertikal links halbaußen
@@ -70,7 +70,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <1 11>;
             bindings = <&kp RA(S)>;
-            layers = <U_L(BASE)>; // Wrapped with U_L()
+            layers = <0>;
         };
 
         // Combo für ü (U + J) -> Vertikal rechts halbaußen
@@ -78,7 +78,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <16 21>;
             bindings = <&kp RA(U)>;
-            layers = <U_L(BASE)>; // Wrapped with U_L()
+            layers = <0>;
         };
 
         // Combo für ö (O + L) -> Vertikal rechts außen
@@ -86,7 +86,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <18 23>;
             bindings = <&kp RA(O)>;
-            layers = <U_L(BASE)>; // Wrapped with U_L()
+            layers = <0>;
         };
     };
 };
