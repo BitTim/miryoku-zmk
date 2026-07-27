@@ -14,7 +14,7 @@ U_NP,              U_NP,              &kp LALT,          &kp SPC,           &mo 
 &kp ESC,           &kp N7,            &kp N8,            &kp N9,            &kp T,             &kp LBKT,          &kp F7,            &kp F8,            &kp F9,            &kp RBKT,         \
 &kp LSHFT,         &kp N4,            &kp N5,            &kp N6,            &kp G,             &kp EQL,           &kp F4,            &kp F5,            &kp F6,            &kp SEMI,         \
 &kp LCTRL,         &kp N1,            &kp N2,            &kp N3,            &kp B,             &kp BSLH,          &kp F1,            &kp F2,            &kp F3,            &kp GRAVE,        \
-U_NP,              U_NP,              &to U_BASE,        &kp SPC,           &none,             &kp MINUS,         &kp N0,            &kp DOT,           U_NP,              U_NP
+U_NP,              U_NP,              &none,             &kp SPC,           &none,             &kp MINUS,         &kp N0,            &kp DOT,           U_NP,              U_NP
 
 #define MIRYOKU_LAYER_LIST \
 MIRYOKU_X(BASE,   "Base") \
@@ -54,7 +54,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <30 35>;
             bindings = <&tog U_GAME>;
-            layers = <U_BASE U_GAME>;
+            layers = <U_L(BASE) U_L(GAME)>; // Wrapped with U_L()
         };
 
         // Combo für ä (Q + A) -> Vertikal links außen
@@ -62,7 +62,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <0 10>; 
             bindings = <&kp RA(A)>;
-            layers = <U_BASE>;
+            layers = <U_L(BASE)>; // Wrapped with U_L()
         };
 
         // Combo für ß (W + S) -> Vertikal links halbaußen
@@ -70,7 +70,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <1 11>;
             bindings = <&kp RA(S)>;
-            layers = <U_BASE>;
+            layers = <U_L(BASE)>; // Wrapped with U_L()
         };
 
         // Combo für ü (U + J) -> Vertikal rechts halbaußen
@@ -78,7 +78,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <16 21>;
             bindings = <&kp RA(U)>;
-            layers = <U_BASE>;
+            layers = <U_L(BASE)>; // Wrapped with U_L()
         };
 
         // Combo für ö (O + L) -> Vertikal rechts außen
@@ -86,7 +86,7 @@ MIRYOKU_X(GAMENUM,"GNum")
             timeout-ms = <50>;
             key-positions = <18 23>;
             bindings = <&kp RA(O)>;
-            layers = <U_BASE>;
+            layers = <U_L(BASE)>; // Wrapped with U_L()
         };
     };
 };
