@@ -92,7 +92,7 @@ MIRYOKU_X(GAMENUM,"GNum")
         // Combo für ö (O + L) -> Vertikal rechts außen
         combo_oe {
             timeout-ms = <50>;
-            key-positions = <9 19>;
+            key-positions = <8 18>;
             bindings = <&kp RA(O)>;
             layers = <U_BASE>;
         };
